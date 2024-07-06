@@ -1,0 +1,22 @@
+// Deleting an Element in an Array
+
+public class A3 {
+    public static void main(String[] args) {
+        int[] num ={1,3,2 ,4 ,5};
+        int deleteIndex = 2;
+        for(int i = deleteIndex ;i<num.length-1;i++){
+            num[i] = num[i+1];
+        }
+
+        // Reduce the logical size of the array
+        int[] newArray = new int[num.length - 1];
+        System.arraycopy(num, 0, newArray, 0, newArray.length);
+
+        // Print the modified array
+        System.out.print("Array after deletion: ");
+        for (int number : newArray) {
+            System.out.print(number + " ");
+        }
+        System.out.println();
+    }
+}
