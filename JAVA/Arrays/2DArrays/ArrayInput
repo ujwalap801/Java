@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class A2 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Asking user for dimensions of the 2D array
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+        System.out.print("Enter number of columns: ");
+        int columns = sc.nextInt();
+
+        // Declare and initialize a 2D array based on user input
+        int[][] matrix = new int[rows][columns];
+
+        // Taking input for the 2D array elements
+        System.out.println("Enter elements for the matrix:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+
+        // Displaying the 2D array elements
+        System.out.println("The matrix you entered:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println(); // Move to the next line after each row
+        }
+    }
+}
