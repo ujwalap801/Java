@@ -24,6 +24,21 @@ Implicit type casting, also known as automatic type casting, occurs when the com
 
 ### Example code:
 
-```java
 int x = 10;
 double y = x; // implicit cast from int to double
+
+
+## Explicit Type Casting
+
+Explicit type casting, also known as manual type casting, occurs when the programmer explicitly uses a cast operator to convert one data type to another. This is necessary when the types are not compatible, or the conversion is not safe.
+
+### Examples:
+
+- **Double to Int (loses precision)**
+
+```java
+double myDouble = 10.5;
+int myInt = (int) myDouble; // Explicit cast from double to int (loses precision)
+System.out.println("Double value: " + myDouble); // Output: 10.5
+System.out.println("Int value: " + myInt);       // Output: 10
+
