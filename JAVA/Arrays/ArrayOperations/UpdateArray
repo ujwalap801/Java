@@ -1,0 +1,19 @@
+
+// Updating an Element in an Array
+public class A2 {
+    public static void main(String[] args) {
+        
+         // Declare and initialize an array
+         int[] numbers = { 1, 2, 3, 4, 5 };
+
+         // Update the element at index 2
+         numbers[2] = 10;
+ 
+         // Print the updated array
+         System.out.print("Updated array: ");
+         for (int number : numbers) {
+             System.out.print(number + " ");
+         }
+         System.out.println();
+    }
+}

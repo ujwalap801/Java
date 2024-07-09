@@ -1,0 +1,29 @@
+//  Declaring and Initializing an Array
+public class A1 {
+    public static void main(String[] args) {
+
+        // Declare an array of integers
+        int numbers[];
+
+        // Initialize the array with values
+        numbers = new int[] { 1, 2, 3, 4 };
+
+        // Accessing elements of the array using index
+        System.out.println("Element at index 0:" + numbers[0]);
+
+        System.out.println("Element at index 0:" + numbers[1]);
+
+        System.out.println("Element at index 0:" + numbers[2]);
+
+        // Modify an element of the array
+        numbers[0] = 0;
+
+        // Print all elements of the array using a loop
+        System.out.println("All elements of the array: ");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println();
+
+    }
+}
