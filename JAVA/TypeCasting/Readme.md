@@ -24,7 +24,6 @@ Implicit type casting, also known as automatic type casting, occurs when the com
 
 ### Example code:
 
-```java
 int x = 10;
 double y = x; // implicit cast from int to double
 
