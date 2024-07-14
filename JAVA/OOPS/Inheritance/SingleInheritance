@@ -1,0 +1,23 @@
+class A{
+
+    void showA()
+    {
+        System.out.println("A class mehtod");
+    }
+}
+public class B extends A {
+
+    void showB(){
+        System.out.println("B class method");
+    }
+    public static void main(String[] args) {
+        A obj = new A();
+        obj.showA();  //A class method is output
+
+        //obj.showB();//show erros
+
+       B obj1 = new B();
+       obj1.showB();   //B class method is output
+       
+        }
+}
