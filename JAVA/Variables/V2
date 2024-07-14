@@ -1,0 +1,30 @@
+public class A1 {
+    int a =10;
+    static int b =20;
+    public static void main(String[] args) {
+          
+        A1 ob1 = new A1();
+        System.out.println(ob1.a);
+        System.out.println(ob1.b);
+    
+        output : 10
+                 20
+
+        ob1.a = 1000;
+        ob1.b= 2000;
+
+        output : 1000
+                 2000
+
+        System.out.println(ob1.a);
+        System.out.println(ob1.b);
+
+        A1 ob2 = new A1();
+        System.out.println(ob2.a);
+        System.out.println(ob2.b);
+
+        output : 10
+                 2000
+
+    }
+}

@@ -1,0 +1,16 @@
+class{
+    int a =10; // instance variable
+    static int b =20; //static variable
+    void add()
+    {
+       int c =30,d; //local variables
+       d=a +b+c;
+       System.out.println(d);
+    }
+    void mul()
+    {
+        int e =40, f:
+        f = a*b*c*e; // we can't use c variable
+        System.out.println(d);
+    }
+}

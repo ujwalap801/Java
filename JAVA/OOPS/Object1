@@ -1,0 +1,24 @@
+// Object using initalization using Method
+public class Method {
+
+    String color;
+    int age;
+
+    void initObj(String c, int a)
+    {
+        color = c;
+        age =a;
+    }
+
+
+    void display(){
+        System.out.println(color +" "+age);
+    }
+    public static void main(String[] args) {
+        Method cat = new Method();
+        cat.initObj("black", 10);
+        cat.display();
+    }
+}
+
+OUTPUT : black 10
