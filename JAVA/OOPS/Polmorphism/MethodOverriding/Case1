@@ -1,0 +1,27 @@
+
+//Do overriding method must have same return type (or subtype)
+ class xyz{
+    Object show(){
+        System.out.println("1");
+        return null;
+    }
+ }
+public class Case1 extends xyz {
+        String show()
+    {
+        System.out.println("2");
+        return null;
+    }
+    public static void main(String[] args) {
+        Case1 t = new Case1();
+        t.show();
+
+        xyz s = new xyz();
+        s.show();
+    }
+}
+
+
+output :
+1
+2

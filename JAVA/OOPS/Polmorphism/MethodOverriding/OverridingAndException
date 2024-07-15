@@ -1,0 +1,137 @@
+
+// OVERRIDING AND EXCEPTION HANDLING
+// Rule-1
+class Test{
+    void show()
+    {
+        System.out.println("1");
+    }
+}
+
+public class Case2 {
+
+   void show() throws Exception{
+    System.out.println("2");
+   }  
+
+   public static void main(String[] args) {
+    Test t= new Test();
+    t.show();
+
+    Case2 ob = new Case2();
+    ob.show(); //Error for checked Exception
+   }
+}
+
+
+
+
+//Rule-2
+class Test{
+    void show() throws RuntimeException
+    {
+        System.out.println("1");
+    }
+}
+
+public class Case2 {
+
+   void show() throws RuntimeException{
+    System.out.println("2");
+   }  
+
+   public static void main(String[] args) {
+    Test t= new Test();
+    t.show();
+
+    Case2 ob = new Case2();
+    ob.show(); 
+   }
+}
+
+
+output :
+1
+2
+
+
+
+// //Rule-3
+class Test{
+    void show() throws RuntimeException
+    {
+        System.out.println("1");
+    }
+}
+
+public class Case2 {
+
+   void show() throws ArithmeticException{
+    System.out.println("2");
+   }  
+
+   public static void main(String[] args) {
+    Test t= new Test();
+    t.show();
+
+    Case2 ob = new Case2();
+    ob.show();
+   }
+}
+
+output :
+1
+2
+
+
+
+// Rule-4
+class Test{
+    void show() throws RuntimeException
+    {
+        System.out.println("1");
+    }
+}
+
+public class Case2 {
+
+   void show() {
+    System.out.println("2");
+   }  
+
+   public static void main(String[] args) {
+    Test t= new Test();
+    t.show();
+
+    Case2 ob = new Case2();
+    ob.show(); 
+   }
+}
+
+output:
+1
+2
+
+
+//Rule-5
+class Test{
+    void show() throws RuntimeException
+    {
+        System.out.println("1");
+    }
+}
+
+public class Case2 {
+
+   void show() throws Exception{
+    System.out.println("2");
+   }  
+
+   public static void main(String[] args) {
+    Test t= new Test();
+    t.show();
+
+    Case2 ob = new Case2();
+    ob.show(); //Error for checked Exception
+   }
+}

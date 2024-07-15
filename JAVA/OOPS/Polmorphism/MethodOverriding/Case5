@@ -1,0 +1,52 @@
+
+.OVERRIDING AND ABSTRACT METHOD
+
+class  Xyz {
+    void show()
+    {
+        System.out.println("1");
+    }
+}
+
+public class Test {
+   
+        void show()
+        {
+          
+            System.out.println("2");
+        }
+
+        public static void main(String[] args) {
+            Test ob = new Test();
+            ob.show();
+    } 
+}
+  
+Output :
+2
+
+class  Xyz {
+    void show()
+    {
+        System.out.println("1");
+    }
+}
+
+public class Test {
+   
+        void show()
+        {
+           super.show();
+            System.out.println("2");
+        }
+
+        public static void main(String[] args) {
+            Test ob = new Test();
+            ob.show();
+    } 
+}
+
+
+output:
+1
+2

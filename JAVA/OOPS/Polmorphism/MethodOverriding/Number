@@ -1,0 +1,25 @@
+
+// No of arguments
+ class xyz{
+    void show(){
+        System.out.println("1");
+    }
+ }
+public class Test extends xyz {
+    void show()
+    {
+        System.out.println("2");
+    }
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.show();
+
+        xyz s = new xyz();
+        s.show();
+    }
+}
+
+
+output :
+ 1 
+ 2

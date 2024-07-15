@@ -1,0 +1,82 @@
+
+Overriding and Acess-modifiers
+case :1
+ class xyz{
+     Object show(){
+        System.out.println("1");
+        return null;
+    }
+ }
+public class Case2 extends xyz {
+        public String show()
+    {
+        System.out.println("2");
+        return null;
+    }
+    public static void main(String[] args) {
+        Case2 t = new Case2();
+        t.show();
+
+        xyz s = new xyz();
+        s.show();
+    }
+}
+
+outpu :
+1
+2
+
+case :2
+class xyz{
+     public Object show(){
+       System.out.println("1");
+       return null;
+   }
+}
+public class Case2 extends xyz {
+       public String show()
+   {
+       System.out.println("2");
+       return null;
+   }
+   public static void main(String[] args) {
+       Case2 t = new Case2();
+       t.show();
+
+       xyz s = new xyz();
+       s.show();
+   }
+}
+
+output :
+1
+2
+
+//case3
+
+
+class xyz{
+   public Object show(){
+       System.out.println("1");
+       return null;
+   }
+}
+public class Case2 extends xyz {
+      String show()
+   {
+       System.out.println("2");
+       return null;
+   }
+   public static void main(String[] args) {
+       Case2 t = new Case2();
+       t.show();
+
+       xyz s = new xyz();
+       s.show();
+   }
+}
+
+
+output : shows error
+
+

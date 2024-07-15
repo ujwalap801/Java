@@ -1,0 +1,22 @@
+
+//Sequence of  arguments
+ class xyz{
+    void show(String a, int b){
+        System.out.println("1");
+    }
+ }
+public class Test extends xyz {
+    void show(String a, int b)
+    {
+        System.out.println("2");
+    }
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.show("uju", 10);
+
+        xyz s = new xyz();
+        s.show("vinay",4);
+    }
+}
+
+
