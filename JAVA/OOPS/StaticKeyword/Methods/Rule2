@@ -1,0 +1,18 @@
+public class StaticDemo {
+   
+    static void display()
+    {
+
+        show();//error
+        System.out.println(i);
+    }
+
+    static void show()
+    {
+        System.out.println("2");
+    }
+}
+
+
+
+Output :error

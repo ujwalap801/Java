@@ -1,0 +1,22 @@
+
+
+class Demo {
+   final void m1()
+    {
+        System.out.println("i am in demo class");
+    }
+        
+    }
+
+    
+public class Test  extends Demo{
+  
+       void m1() //Eror
+       {
+        System.out.println("I am in Test class");
+       }
+
+       public static void main(String[] args) {
+    }
+}
+

@@ -1,0 +1,28 @@
+public class Test {
+    static
+    {
+        System.out.println("hello");
+    }
+
+    static{
+        System.out.println("I am second static block");
+    }
+
+
+   
+    public static void main(String[] args) {
+        System.out.println("I am in main method");
+    }
+
+    static{
+        System.out.println("I am fourth static block");
+    }
+
+}
+
+
+output:
+hello
+I am second static block
+I am fourth static block
+I am in main method

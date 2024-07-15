@@ -1,0 +1,15 @@
+6) this Keyword to Return the Current Class Instance from the Method
+Example:
+
+java
+Copy code
+public class Test {
+    Test m1() {
+        return this;
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.m1();
+    }
+}

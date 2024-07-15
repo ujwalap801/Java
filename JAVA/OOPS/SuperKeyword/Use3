@@ -1,0 +1,28 @@
+
+class A{
+  
+    A()
+    {
+        System.out.println("I am in class A");
+    }
+}
+public class B extends A {
+
+    B()
+    {
+        super();
+        System.out.println("I am in class B");
+    }
+
+
+    public static void main(String[] args) {
+        B ob1 = new B();
+       
+    }
+}
+
+
+Output:
+I am in class A
+I am in class B 
+if we dont use super() also we get the same output

@@ -1,0 +1,26 @@
+public class Employee {
+    int emp_id;
+    String name;
+   static  String company="google";
+
+    Employee(int emp_id, String name)
+    {
+        this.emp_id = emp_id;
+        this.name = name;
+       
+    }
+
+    void display()
+    {
+        System.out.println(emp_id+" "+name+" "+company);
+    }
+    public static void main(String[] args) {
+        Employee e1 = new Employee(1001, "uju");
+        e1.display();
+
+    }
+}
+
+
+The static varaible can be used to refer to the common property or value for all objects,
+The static varaible gets memory only once in the class area at the time of class loading

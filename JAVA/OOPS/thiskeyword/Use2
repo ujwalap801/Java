@@ -1,0 +1,22 @@
+2) this Keyword to Invoke Current Class Method (Implicitly)
+Example:
+
+java
+Copy code
+class Xyz {
+    void display() {
+        System.out.println("hello");
+    }
+
+    void show() {
+        this.display();
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Xyz x = new Xyz();
+        x.show();  // Output: hello
+    }
+}
+Note: If we do not use the this keyword, the compiler automatically adds the this keyword while invoking the method.

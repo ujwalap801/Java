@@ -1,0 +1,21 @@
+5) this Keyword to Pass as an Argument in Constructor Call
+Example:
+
+java
+Copy code
+class Xyz {
+    Xyz(Test td) {
+        System.out.println("Test class constructor");
+    }
+}
+
+public class Test {
+    void m1() {
+        Xyz x = new Xyz(this);
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test();
+        t.m1();  // Output: Test class constructor
+    }
+}

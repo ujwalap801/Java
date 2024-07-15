@@ -1,0 +1,45 @@
+3) this() Keyword to Invoke Current Class Constructor
+Case 1:
+java
+Copy code
+class Xyz {
+    Xyz() {
+        System.out.println("No argument constructor");
+    }
+
+    Xyz(int a) {
+        this();
+        System.out.println("Parameterized constructor");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Xyz x = new Xyz(10);
+        // Output:
+        // No argument constructor
+        // Parameterized constructor
+    }
+}
+Case 2:
+java
+Copy code
+class Xyz {
+    Xyz() {
+        this(10);
+        System.out.println("No argument constructor");
+    }
+
+    Xyz(int a) {
+        System.out.println("Parameterized constructor");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Xyz x = new Xyz();
+        // Output:
+        // Parameterized constructor
+        // No argument constructor
+    }
+}

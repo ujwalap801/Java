@@ -1,0 +1,21 @@
+4) this Keyword to Pass as an Argument in Method Call
+Example:
+
+java
+Copy code
+class Xyz {
+    void m1(Xyz td) {
+        System.out.println("I am m1 method");
+    }
+
+    void m2() {
+        m1(this);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Xyz x = new Xyz();
+        x.m2();  // Output: I am m1 method
+    }
+}
