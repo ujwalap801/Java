@@ -1,0 +1,19 @@
+// Sequence of Arguments
+public class Sqeuence {
+
+    void show(int a, String b)
+    {
+        System.out.println("1");
+    }
+
+    void show(String a, int b)
+    {
+        System.out.println("2");
+    }
+    public static void main(String[] args) {
+        Sqeuence t = new Sqeuence();
+        t.show(10, "uju");
+        t.show("uju",10);
+
+    }
+}

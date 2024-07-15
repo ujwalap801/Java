@@ -1,0 +1,17 @@
+public class Type {
+
+    void show(int a)
+    {
+        System.out.println("1");
+    }
+
+    void show(String a)
+    {
+        System.out.println("2");
+    }
+    public static void main(String[] args) {
+        Type t = new Type();
+        t.show("uju");
+        t.show(10);
+    }
+}

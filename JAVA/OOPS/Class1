@@ -1,0 +1,20 @@
+public class Animal {
+
+    public void eat()
+    {
+        System.out.println("I am eating");
+    }
+ public static void main(String[] args) {
+    Animal buzo = new Animal();
+    buzo.eat();
+    buzo.run();
+ }   
+
+ public void run()
+ {
+    System.out.println("I am running");
+ }
+}
+
+output : I am eating
+        I am running

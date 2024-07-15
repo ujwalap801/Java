@@ -1,0 +1,16 @@
+// Object Instanizilation by reference vraiable
+public class Bird {
+
+    String color;
+    int age;
+
+    public static void main(String[] args) {
+        Bird pigen= new Bird();
+        pigen.color = "blue";
+        pigen.age = 10;
+        System.out.println(pigen.color+" "+pigen.age);
+    }
+}
+
+
+OUTPU: blue 10

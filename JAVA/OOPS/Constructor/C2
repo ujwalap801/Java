@@ -1,0 +1,30 @@
+
+
+public class Test {
+//   Default constructor
+    int i;
+    String s;
+
+    // No arg constructor
+    Test(){
+        System.out.println("No argument consturctor");
+    }
+ 
+
+    //parameterized consturctor
+    Test(int a){
+        System.out.println("Paramertized consturctor");
+      }
+
+
+    public static void main(String[] args) {
+        Test t= new Test(); //no arg consturctor
+        output : "No argument consturctor"
+
+        Test t= new Test(); //parameterzed consturctor
+        output : "Paramertized consturctor"
+
+        System.out.println(t.i+" "+t.s);//default consturctor
+        output : 0 null
+    }
+}

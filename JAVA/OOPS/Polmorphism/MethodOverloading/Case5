@@ -1,0 +1,28 @@
+public class Case5 {
+
+    void show(int a)
+    {
+        System.out.println("int  method");
+    }
+
+    void show(int... b)
+    {
+        System.out.println("varags method");
+    }
+
+    public static void main(String[] args) {
+        Case5 c = new Case5();
+        c.show(10);
+        c.show(10,20,40);
+        c.show();
+
+
+
+    }
+}
+
+
+//output :
+int  method
+varags method
+varags method

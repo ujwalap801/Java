@@ -1,0 +1,23 @@
+public class Case1 {
+
+
+    void show(int a)
+    {
+        System.out.println("int method");
+    }
+
+    void show(String a)
+    {
+        System.out.println("string method");
+    }
+    public static void main(String[] args) {
+        
+         Case1 t= new Case1();
+         t.show('q');
+         
+    }  
+}
+
+output : int mehtod
+
+
