@@ -1,0 +1,16 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+ 
+       String s1 ="ab";
+       String s2 = "AB";
+       System.out.println(s1.compareTo(s2)); 
+    //   a = 97 and b = 65 now output is   97-65 is 32
+    // s1 > s2 then +
+    // s1 < s2  then -
+    // s1 = s2 then 0
+    System.out.println(s1.compareToIgnoreCase(s2));
+    }
+}

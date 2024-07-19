@@ -1,0 +1,13 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+ 
+      String s1 ="uju";
+      String s2="Uju";
+      System.out.println(s1.equals(s2));  //false
+
+      System.out.println(s1.equalsIgnoreCase(s2)); //true
+    }
+}

@@ -1,0 +1,8 @@
+
+class HelloWorld {
+    public static void main(String[] args) {
+ 
+      String name ="uju";
+      System.out.println(name.isEmpty());
+    }
+}
