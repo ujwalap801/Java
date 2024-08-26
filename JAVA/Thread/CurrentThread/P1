@@ -1,0 +1,17 @@
+public class Test {
+  public static void main(String[] args) {
+System.out.println("Hii");
+System.out.println(Thread.currentThread().getName()); //main
+
+Thread.currentThread().setName("uju");
+System.out.println(Thread.currentThread().getName());//uju
+
+
+Thread.currentThread().setName("Uju"); //Exception in uju method
+
+System.out.println(10/0);//Exception in main method
+
+  }
+
+  
+}

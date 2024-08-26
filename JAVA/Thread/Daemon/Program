@@ -1,0 +1,19 @@
+
+import java.util.*;
+public class Test2 extends Thread {
+    
+    public  void run()
+    {
+        // System.out.println(Thread.currentThread().isDaemon());
+        // System.out.println("daemon thread");
+
+
+        if(Thread.currentThread().isDaemon())
+        {
+            System.out.println("daemon Thread");
+        }
+
+        else{
+            System.out.println("Child Thread");
+        }
+    }

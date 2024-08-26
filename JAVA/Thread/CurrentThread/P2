@@ -1,0 +1,78 @@
+public class Test1 extends Thread {
+ public void run()
+ {
+ 
+    System.out.println("thread task :" +Thread.currentThread().getName());
+ }
+    public static void main(String[] args) {
+
+        System.out.println("Hello : "+Thread.currentThread().getName());
+        
+        Test1 t1 = new Test1();
+        t1.start();
+
+        Test1 t2 = new Test1();
+        t2.start();
+    }
+}
+
+
+output :
+Hello : main
+thread task :Thread-1
+thread task :Thread-0
+
+
+public class Test1 extends Thread {
+    public void run()
+    {
+    
+       System.out.println("thread task :" +Thread.currentThread().getName());
+    }
+       public static void main(String[] args) {
+   
+           System.out.println("Hello : "+Thread.currentThread().getName());
+           
+           Test1 t1 = new Test1();
+           t1.setName("Uju");
+           t1.start();
+   
+           Test1 t2 = new Test1();
+           t2.setName("Vinay");
+           t2.start();
+       }
+   }
+   
+   
+
+   output:
+   Hello : main
+thread task :Uju
+thread task :Vinay
+
+
+
+
+
+public class Test1 extends Thread {
+    public void run()
+    {
+    
+        Thread.currentThread().setName("Uju");
+       System.out.println("thread task :" +Thread.currentThread().getName());
+    }
+       public static void main(String[] args) {
+   
+           System.out.println("Hello : "+Thread.currentThread().getName());
+           Test1 t1 = new Test1();
+           t1.start();
+   
+          
+         
+       }
+   }
+
+
+// output :
+// Hello : main
+// thread task :Uju
