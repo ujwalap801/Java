@@ -1,0 +1,36 @@
+public class Test4  extends Thread{
+
+
+public void run()
+{
+    for(int i=1;i<=5;i++)
+    {
+         System.out.println(Thread.currentThread().getName()+"="+i);
+
+    }
+}
+    public static void main(String[] args) {
+        
+        Test4 t = new Test4();
+        t.start();
+        for(int i=1;i<=5;i++)
+        {
+            Thread.yield();
+            System.out.println("Main Thread");
+
+        }
+    }
+}
+
+
+output:
+Main Thread
+Main Thread
+Main Thread
+Main Thread
+Main Thread
+Thread-0=1
+Thread-0=2
+Thread-0=3
+Thread-0=4
+Thread-0=5
