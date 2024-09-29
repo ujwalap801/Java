@@ -1,5 +1,10 @@
 ## Explanation of `public static void main(String[] args)`
 
+
+we can have many java class 
+we can have only one public class in  a java program
+
+
 ### public
 **Access Modifier**: `public` is an access modifier that means this method is accessible from anywhere. In the context of the main method, it means that the Java runtime can call this method from outside the class when the program starts.
 
