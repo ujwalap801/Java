@@ -27,6 +27,11 @@ The JVM has become a widely-used platform for running not only Java applications
 
 JDK stands for Java Development Kit. It's a software development kit that provides a set of tools and libraries for developing, testing, and running Java applications.
 
+
+The Java Development Kit (JDK) is a cross-platformed software development environment that offers a collection of tools and libraries necessary for developing Java-based software applications and applets. It is a core package used in Java, along with the JVM (Java Virtual Machine) and the JRE (Java Runtime Environment). 
+
+Beginners often get confused with JRE and JDK, if you are only interested in running Java programs on your machine then you can easily do it using Java Runtime Environment. However, if you would like to develop a Java-based software application then along with JRE you may need some additional necessary tools, which is called JDK.
+
 The JDK includes:
 
 1. Java Runtime Environment (JRE) - includes the JVM, Java classes, and other core libraries
@@ -78,3 +83,12 @@ Some popular JRE implementations include:
 - Azul JRE (Azul Systems)
 
 The JRE is essential for running Java applications on desktops, servers, or mobile devices, making it a widely-used software package in the Java ecosystem.
+
+
+
+#  In Java, we have three important components: JVM, JRE, and JDK. 
+The JVM or Java Virtual Machine is responsible for executing Java bytecode, enabling Java programs to run on any platform. It handles memory management and garbage collection.
+
+The JRE, or Java Runtime Environment, provides the libraries and JVM necessary to run Java applications. However, it doesn't include the tools for development.
+
+Finally, the JDK, or Java Development Kit, is a comprehensive package that includes the JRE as well as tools for developing Java applications, such as compilers and debuggers. So, to summarize, the JDK is for developers to create Java programs, the JRE is for users to run those programs, and the JVM is the engine that executes the bytecode.

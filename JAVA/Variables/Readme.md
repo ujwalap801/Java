@@ -107,3 +107,18 @@ When obj2.staticVar is set to 200, this change is reflected across all objects. 
 Static variable value: 100
 Static variable value: 200
 Static variable value: 200
+
+
+# Example
+
+class HelloWorld {
+    static int b=10;
+    public static void main(String[] args) {
+        
+         System.out.println("b is ,"+b);
+        
+        
+    }
+}
+
+# output is b is, 10

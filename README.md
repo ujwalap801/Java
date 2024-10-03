@@ -36,6 +36,16 @@ Java's key features include:
 4. Large community and ecosystem
 5. Extensive libraries and APIs
 
-## Conclusion
+# Robustness
+Java language is robust which means reliable. It is developed in such a way that it puts a lot of effort into checking errors as early as possible, that is why the java compiler is able to detect even those errors that are not easy to detect by another programming language. The main features of java that make it robust are garbage collection, exception handling, and memory allocation. 
 
-Overall, Java is a versatile and powerful language that has become a standard in the software development industry.
+# Java supports multithreading, enabling the concurrent execution of multiple parts of a program. This feature is particularly useful for applications that require high performance, such as games and real-time simulations.
+
+
+# High Performance
+Java architecture is defined in such a way that it reduces overhead during the runtime and at some times java uses Just In Time (JIT) compiler where the compiler compiles code on-demand basis where it only compiles those methods that are called making applications to execute faster.
+
+# A compiler and an interpreter are both tools used to translate high-level programming languages into machine code, but they do so in different ways and have distinct characteristics. 
+
+Compiler: A compiler translates the entire source code of a program into machine code before execution. This process results in a separate executable file that can be run independently of the source code.
+Interpreter: An interpreter translates the source code line-by-line or statement-by-statement at runtime. It executes the code immediately without producing a separate executable file.

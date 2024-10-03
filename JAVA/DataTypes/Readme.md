@@ -4,6 +4,9 @@ A data type is a label that defines what kind of data a variable can hold, how m
 
 ## Primitive Data Types
 
+Primitive Data Types:
+Primitive data types are the basic building blocks of data in Java. They are not objects and hold their values directly. 
+
 In Java, there are 8 primitive data types:
 
 1. **byte**: 8-bit integer
@@ -15,9 +18,24 @@ In Java, there are 8 primitive data types:
 7. **char**: single character
 8. **boolean**: true or false
 
-These 8 primitive data types are the building blocks of Java's data type system, and all other data types (like strings, arrays, objects, etc.) are derived from these primitives.
+
+byte: 1 byte
+boolean: 1 byte
+
+short: 2 bytes
+char: 2 bytes
+
+int: 4 bytes
+float: 4 bytes
+
+long: 8 bytes
+double: 8 bytes
+
+
 
 ## Non-Primitive Data Types
+Non-Primitive Data Types:
+Non-primitive data types, also known as reference data types, are more complex. They are created from primitive data types and can hold multiple values or more complex data. 
 
 Here are the non-primitive data types in Java:
 
