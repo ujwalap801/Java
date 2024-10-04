@@ -1,0 +1,24 @@
+
+class HelloWorld {
+    public static void main(String[] args) {
+       
+       String num ="123";
+       
+    //   CONVERTING STRING TO INT
+       int parseInt = Integer.parseInt(num);
+       
+       
+    //   CONVERTING INT TO INTGER
+    Integer intVal = Integer.valueOf(parseInt);
+
+       if(intVal instanceof Integer)
+       {
+           
+            System.out.println("number of type integer.");
+       }
+       else{
+                  System.out.println("number of  no type integer.");
+       }
+       
+    }
+}

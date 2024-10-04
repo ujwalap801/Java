@@ -1,0 +1,25 @@
+
+public class A3 {
+
+    public static void main(String[] args) {
+String myString = "123";
+
+int myInt = Integer.parseInt(myString); // Parsing string to int
+System.out.println("Int value after parsing: " + myInt);
+
+if (myString instanceof String) {
+    System.out.println("myString is of type String.");
+} else {
+    System.out.println("myString is not of type String.");
+}
+
+// Using Integer to demonstrate instanceof check
+Integer myInteger = Integer.valueOf(myInt);
+
+if (myInteger instanceof Integer) {
+    System.out.println("myInteger is of type Integer.");
+} else {
+    System.out.println("myInteger is not of type Integer.");
+}
+}
+}

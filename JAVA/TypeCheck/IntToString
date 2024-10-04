@@ -1,0 +1,21 @@
+
+class HelloWorld {
+    public static void main(String[] args) {
+       
+      int num = 123;
+       
+    //   CONVERTING INT TO STRING
+       String parseString = String.valueOf(num);
+       
+
+       if(parseString instanceof String)
+       {
+           
+            System.out.println("number of type String.");
+       }
+       else{
+                  System.out.println("number of  no type String.");
+       }
+       
+    }
+}

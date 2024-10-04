@@ -24,3 +24,4 @@ Static variables and static methods are stored in a special memory area known as
   
 - **Static Variables**: Unlike instance variables, which are tied to specific instances of a class, static variables belong to the class itself. This means that there is only one copy of a static variable, regardless of how many instances of the class are created.
 
+# Class-Level Association: Static variables are shared across all instances of a class, so they need a single, consistent storage location. Storing them in static memory ensures that all instances reference the same data.
