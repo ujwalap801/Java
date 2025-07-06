@@ -1,4 +1,4 @@
-# Java 
+# Java
 
 Java is a high-level, object-oriented programming language and computing platform developed by Sun Microsystems (now owned by Oracle Corporation). It was first released in 1995 and has since become one of the most popular programming languages in the world.
 
