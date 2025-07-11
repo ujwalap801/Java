@@ -2,7 +2,7 @@
 
 Java is a high-level, object-oriented programming language and computing platform developed by Sun Microsystems (now owned by Oracle Corporation). It was first released in 1995 and has since become one of the most popular programming languages in the world.
 
-Java is known for its platform independence, which means that programs written in Java can run on any device that has a Java Virtual Machine (JVM) installed, without the need for recompilation. This makes Java a "write once, run anywhere" language.
+Java is known for its platform independence, which means that programs written in Java can run on any device that has a Java Virtual Machine (JVM) installed, without the need for recompilation. This makes Java a "write once, run anywhere" language
 
 ## Applications of Java
 
